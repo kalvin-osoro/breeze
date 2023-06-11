@@ -55,8 +55,25 @@ e.g., resources/views/layouts/app.blade.php
 
  const ctx = document.getElementById('myChart').getContext('2d');
 
-after that I would run the app
+Create a route and controller:
 
-npm run dev
+php artisan make:controller DataVisualizationController
+
+. Define a method,to handle the data visualization page:
+
+public function index()
+{
+    return view('data-visualization');
+}
+
+. define a route to access the data visualization page:
+
+Route::get('/data-visualization', 'DataVisualizationController@index');
+
+
+Create a view for data visualization and add html structure for it
+
+
+then test the app
 
 
