@@ -37,3 +37,26 @@ Please review [our security policy](https://github.com/laravel/breeze/security/p
 ## License
 
 Laravel Breeze is open-sourced software licensed under the [MIT license](LICENSE.md).
+
+
+#Notes
+
+. Install the Library e.g chart.js
+
+npm install chart.js
+
+
+. compile the chart.js library to use it in a blade file
+
+. Import the Library in a Blade Template
+e.g., resources/views/layouts/app.blade.php
+
+ then use the library a your JavaScript code
+
+ const ctx = document.getElementById('myChart').getContext('2d');
+
+after that I would run the app
+
+npm run dev
+
+
